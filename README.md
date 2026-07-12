@@ -1,33 +1,41 @@
-<<<<<<< HEAD
 # TransitOps
 
-Enterprise Fleet Management Platform
+AI-Powered Fleet Management Dashboard
 
-## Overview
+## Features
 
-TransitOps is a centralized transport operations platform designed to manage:
-
-- Vehicles
-- Drivers
-- Trips
-- Maintenance
-- Fuel Logs
-- Operational Analytics
-
-### Features
-
-- Fleet Dashboard
+- Dashboard Overview
 - Vehicle Registry
 - Driver Management
-- Trip Dispatching
-- Maintenance Tracking
-- Fuel & Expense Monitoring
-- Analytics & Reporting
+- Trip Management
+- Maintenance Workflow
+- Fuel & Expense Tracking
+- Analytics Dashboard
 
-Built for the TransitOps Smart Transport Operations Platform Hackathon.
-=======
-# transitops-
-transitops smart transport operations system odoo hackathon
+## Technologies
 
+- HTML
+- CSS
+- JavaScript
+- Git
+- GitHub
 
->>>>>>> 6e35684b6e2d9eb156da05ebf82ec652d27cdbb4
+## Team
+
+Hackathon Submission 2026
+
+## Modules
+
+1. Fleet Monitoring
+2. Vehicle Tracking
+3. Driver Records
+4. Maintenance Scheduling
+5. Expense Tracking
+6. Performance Analytics
+
+## Future Enhancements
+
+- AI Route Optimization
+- Predictive Maintenance
+- Driver Risk Analysis
+- Fuel Cost Forecasting
