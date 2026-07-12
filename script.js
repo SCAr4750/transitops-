@@ -1,31 +1,41 @@
-// =====================================
-// TRANSITOPS
-// HOUR 1
-// =====================================
-
 window.addEventListener("load", () => {
 
-    console.log("TransitOps Dashboard Loaded");
+    console.log("TransitOps Loaded");
 
-    const cards =
-    document.querySelectorAll(".kpi-card");
+    const maintenanceButton =
+        document.getElementById(
+            "completeMaintenance"
+        );
 
-    cards.forEach(card => {
+    const maintenanceStatus =
+        document.getElementById(
+            "maint-status"
+        );
 
-        card.addEventListener("mouseenter", () => {
+    if(
+        maintenanceButton &&
+        maintenanceStatus
+    ){
 
-            card.style.transform =
-            "translateY(-6px)";
+        maintenanceButton
+        .addEventListener(
+            "click",
+            () => {
 
-        });
+                maintenanceStatus
+                .textContent =
+                "Available";
 
-        card.addEventListener("mouseleave", () => {
+                maintenanceButton
+                .textContent =
+                "Completed";
 
-            card.style.transform =
-            "translateY(0px)";
+                maintenanceButton
+                .disabled =
+                true;
+            }
+        );
 
-        });
-
-    });
+    }
 
 });

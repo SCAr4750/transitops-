@@ -547,3 +547,15 @@ footer{
 .panel{
     margin-bottom:20px;
 }
+button{
+    padding:8px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#3b82f6;
+    color:white;
+}
+
+button:hover{
+    opacity:0.9;
+}
