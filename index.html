@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitOps</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+
+            <div>
+                <h2>TransitOps</h2>
+                <p>Fleet Management</p>
+            </div>
+
+        </div>
+
+        <ul class="nav-menu">
+
+            <li class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-truck-moving"></i>
+                Vehicles
+            </li>
+
+            <li>
+                <i class="fa-solid fa-id-card"></i>
+                Drivers
+            </li>
+
+            <li>
+                <i class="fa-solid fa-route"></i>
+                Trips
+            </li>
+
+            <li>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Maintenance
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gas-pump"></i>
+                Fuel Logs
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-pie"></i>
+                Analytics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>
+                    Transport Operations Dashboard
+                </h1>
+
+                <p>
+                    Monitor fleet activity and operational performance.
+                </p>
+
+            </div>
+
+            <div class="header-right">
+
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    class="search-box"
+                >
+
+                <button class="notify-btn">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        TO
+                    </div>
+
+                    <div>
+                        <h4>TransitOps Admin</h4>
+                        <p>Operations Center</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- KPI SECTION -->
+
+        <section class="kpi-grid">
+
+            <div class="kpi-card">
+                <h4>Active Vehicles</h4>
+                <h2>24</h2>
+                <p>+8% this week</p>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Available Fleet</h4>
+                <h2>18</h2>
+                <p>Ready for dispatch</p>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Active Trips</h4>
+                <h2>12</h2>
+                <p>Across 5 regions</p>
+            </div>
+
+            <div class="kpi-card">
+                <h4>Drivers On Duty</h4>
+                <h2>20</h2>
+                <p>2 renewals pending</p>
+            </div>
+
+        </section>
+
+        <!-- DASHBOARD GRID -->
+
+        <section class="dashboard-grid">
+
+            <!-- FLEET UTILIZATION -->
+
+            <div class="panel">
+
+                <h3>Fleet Utilization Trend</h3>
+
+                <div class="utilization">
+
+                    <div class="row">
+                        <span>Jan</span>
+                        <div class="progress">
+                            <div class="fill w65"></div>
+                        </div>
+                        <span>65%</span>
+                    </div>
+
+                    <div class="row">
+                        <span>Feb</span>
+                        <div class="progress">
+                            <div class="fill w70"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="row">
+                        <span>Mar</span>
+                        <div class="progress">
+                            <div class="fill w75"></div>
+                        </div>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="row">
+                        <span>Apr</span>
+                        <div class="progress">
+                            <div class="fill w78"></div>
+                        </div>
+                        <span>78%</span>
+                    </div>
+
+                    <div class="row">
+                        <span>May</span>
+                        <div class="progress">
+                            <div class="fill w80"></div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="row">
+                        <span>Jun</span>
+                        <div class="progress">
+                            <div class="fill w82"></div>
+                        </div>
+                        <span>82%</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- VEHICLE STATUS -->
+
+            <div class="panel">
+
+                <h3>Vehicle Status</h3>
+
+                <div class="status-box">
+                    <h2>24</h2>
+                    <p>Active</p>
+                </div>
+
+                <div class="status-box">
+                    <h2>18</h2>
+                    <p>Available</p>
+                </div>
+
+                <div class="status-box">
+                    <h2>6</h2>
+                    <p>Maintenance</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BOTTOM GRID -->
+
+        <section class="bottom-grid">
+
+            <div class="panel">
+
+                <h3>Recent Activity</h3>
+
+                <ul class="activity-list">
+
+                    <li>Vehicle VAN-05 dispatched</li>
+
+                    <li>Driver completed trip</li>
+
+                    <li>Maintenance scheduled</li>
+
+                    <li>Fuel entry added</li>
+
+                </ul>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Fleet Alerts</h3>
+
+                <ul class="activity-list">
+
+                    <li>2 licenses expiring soon</li>
+
+                    <li>3 vehicles due for maintenance</li>
+
+                    <li>Fuel costs increased</li>
+
+                    <li>Utilization above target</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            TransitOps © 2026
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
