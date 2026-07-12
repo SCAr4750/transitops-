@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TransitOps
 
 Enterprise Fleet Management Platform
@@ -24,3 +25,9 @@ TransitOps is a centralized transport operations platform designed to manage:
 - Analytics & Reporting
 
 Built for the TransitOps Smart Transport Operations Platform Hackathon.
+=======
+# transitops-
+transitops smart transport operations system odoo hackathon
+
+
+>>>>>>> 6e35684b6e2d9eb156da05ebf82ec652d27cdbb4
