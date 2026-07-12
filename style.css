@@ -544,3 +544,6 @@ footer{
     background:rgba(239,68,68,0.2);
     color:#ef4444;
 }
+.panel{
+    margin-bottom:20px;
+}
