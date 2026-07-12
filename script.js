@@ -120,9 +120,55 @@ row.innerHTML = `
             ${status}
         </span>
     </td>
+    <td>
+        <button class="change-status">
+            Change Status
+        </button>
+    </td>
 `;
 
                 table.appendChild(row);
+
+                const button =
+row.querySelector(".change-status");
+
+button.addEventListener("click", () => {
+
+    const badge =
+    row.querySelector(".status");
+
+    if(
+        badge.textContent.trim()
+        === "Available"
+    ){
+        badge.textContent =
+        "On Trip";
+
+        badge.className =
+        "status trip";
+    }
+
+    else if(
+        badge.textContent.trim()
+        === "On Trip"
+    ){
+        badge.textContent =
+        "In Shop";
+
+        badge.className =
+        "status shop";
+    }
+
+    else{
+
+        badge.textContent =
+        "Available";
+
+        badge.className =
+        "status active";
+    }
+
+});
 
                 document
                 .getElementById(
