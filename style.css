@@ -559,3 +559,27 @@ button{
 button:hover{
     opacity:0.9;
 }
+
+.vehicle-form{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.vehicle-form input{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#162235;
+    color:white;
+}
+
+.vehicle-form button{
+    background:#3b82f6;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}

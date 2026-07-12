@@ -31,50 +31,39 @@
 
         </div>
 
-        <ul class="nav-menu">
+    <ul class="nav-menu">
 
-            <li class="active">
-                <i class="fa-solid fa-chart-line"></i>
-                Dashboard
-            </li>
+    <li class="active menu-item" data-section="dashboard">
+        <i class="fa-solid fa-chart-line"></i>
+        Dashboard
+    </li>
 
-            <li>
-                <i class="fa-solid fa-truck-moving"></i>
-                Vehicles
-            </li>
+    <li class="menu-item" data-section="vehicles">
+        <i class="fa-solid fa-truck-moving"></i>
+        Vehicles
+    </li>
 
-            <li>
-                <i class="fa-solid fa-id-card"></i>
-                Drivers
-            </li>
+    <li class="menu-item" data-section="drivers">
+        <i class="fa-solid fa-id-card"></i>
+        Drivers
+    </li>
 
-            <li>
-                <i class="fa-solid fa-route"></i>
-                Trips
-            </li>
+    <li class="menu-item" data-section="trips">
+        <i class="fa-solid fa-route"></i>
+        Trips
+    </li>
 
-            <li>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                Maintenance
-            </li>
+    <li class="menu-item" data-section="maintenance">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        Maintenance
+    </li>
 
-            <li>
-                <i class="fa-solid fa-gas-pump"></i>
-                Fuel Logs
-            </li>
+    <li class="menu-item" data-section="analytics">
+        <i class="fa-solid fa-chart-pie"></i>
+        Analytics
+    </li>
 
-            <li>
-                <i class="fa-solid fa-chart-pie"></i>
-                Analytics
-            </li>
-
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                Settings
-            </li>
-
-        </ul>
-
+</ul>
     </aside>
 
     <!-- MAIN -->
@@ -249,11 +238,36 @@
 
         <section class="bottom-grid">
 
-           <div class="panel">
+           <div class="panel app-section" id="vehicles">
 
     <h3>Vehicle Registry</h3>
 
-    <table class="vehicle-table">
+    <div class="vehicle-form">
+
+    <input
+        type="text"
+        id="vehicleId"
+        placeholder="Vehicle ID">
+
+    <input
+        type="text"
+        id="vehicleType"
+        placeholder="Vehicle Type">
+
+    <input
+        type="text"
+        id="vehicleCapacity"
+        placeholder="Capacity">
+
+    <button id="addVehicleBtn">
+        Add Vehicle
+    </button>
+
+</div>
+
+
+
+    <table class="vehicle-table" id="vehicleTable">
 
         <thead>
             <tr>
@@ -299,7 +313,7 @@
 
             </div>
 
-           <div class="panel">
+           <div class="panel app-section" id="drivers">
 
     <h3>Driver Management</h3>
 
@@ -349,7 +363,7 @@
 
         </section>
 
-<section class="panel">
+<section class="panel app-section" id="trips">
 
     <h3>Trip Management</h3>
 
@@ -405,7 +419,7 @@
 
 </section>
 
-<section class="panel">
+<section class="panel app-section" id="maintenance">
 
     <h3>Maintenance Records</h3>
 
@@ -489,7 +503,7 @@
 
 </section>
 
-<section class="panel">
+<section class="panel app-section" id="analytics">
 
     <h3>Analytics Overview</h3>
 
