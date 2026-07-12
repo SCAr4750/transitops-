@@ -583,3 +583,16 @@ button:hover{
     border-radius:8px;
     cursor:pointer;
 }
+.vehicle-form select{
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#162235;
+
+    color:white;
+
+}

@@ -100,17 +100,27 @@ document.addEventListener("DOMContentLoaded", () => {
                     "tr"
                 );
 
-                row.innerHTML = `
-                    <td>${id}</td>
-                    <td>${type}</td>
-                    <td>User Added</td>
-                    <td>${capacity}</td>
-                    <td>
-                        <span class="status active">
-                            Available
-                        </span>
-                    </td>
-                `;
+                let statusClass = "active";
+
+                  if(status === "On Trip"){
+                    statusClass = "trip";
+}
+
+                  if(status === "In Shop"){
+                    statusClass = "shop";
+}
+
+row.innerHTML = `
+    <td>${id}</td>
+    <td>${type}</td>
+    <td>User Added</td>
+    <td>${capacity}</td>
+    <td>
+        <span class="status ${statusClass}">
+            ${status}
+        </span>
+    </td>
+`;
 
                 table.appendChild(row);
 
@@ -133,5 +143,46 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
     }
+
+// ------------------
+// MAINTENANCE BUTTON
+// ------------------
+
+const maintenanceButton =
+document.getElementById(
+    "completeMaintenance"
+);
+
+const maintenanceStatus =
+document.getElementById(
+    "maint-status"
+);
+
+if(
+    maintenanceButton &&
+    maintenanceStatus
+){
+
+    maintenanceButton
+    .addEventListener(
+        "click",
+        () => {
+
+            maintenanceStatus
+            .textContent =
+            "Available";
+
+            maintenanceButton
+            .textContent =
+            "Completed";
+
+            maintenanceButton
+            .disabled =
+            true;
+
+        }
+    );
+
+}
 
 });
